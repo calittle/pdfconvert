@@ -9,6 +9,17 @@ import java.io.File;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * Sample implementation of PDF to PNG conversion using Ghost4J.
+ * Note that this requires GhostScript C API, which you can install as a DLL or shared object.
+ * See https://ghostscript.com/doc/current/Install.htm
+ * The GhostScript API should be available in the path.
+ *
+ * For macOS, you can use MacPorts:
+ *   # sudo ports install ghostscript
+ *   # export LD_LIBRARY_PATH=/opt/local/lib
+ *
+ */
 public class Main {
 
     public static void main(String[] args) {
